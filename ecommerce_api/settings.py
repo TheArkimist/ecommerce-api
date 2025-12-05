@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'api',
     'rest_framework',
     'users',
-    'rest_framework.authtoken'
+    'rest_framework_simplejwt'
 ]
 
 MIDDLEWARE = [
@@ -56,7 +56,7 @@ MIDDLEWARE = [
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
-        'rest_framework.authentication.TokenAuthentication',
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
     ],
 
     'DEFAULT_PAGINATION_CLASS':
