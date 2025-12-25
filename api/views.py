@@ -16,11 +16,13 @@ class ProductViewSet(ListCreateAPIView):
     filterset_class = ProductFilter
     search_fields = ['name', 'category__name']
     ordering_fields = ['name']
+    throttle_scope = 'products'
 
 class ProductDetailViewSet(RetrieveUpdateDestroyAPIView):
     queryset = ProductModel.objects.all()
     serializer_class = ProductSerializer
     permission_classes = [IsAuthenticated]
+    throttle_scope = 'products'
 
 
 
