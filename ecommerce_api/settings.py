@@ -82,7 +82,8 @@ REST_FRAMEWORK = {
         'rest_framework.throttling.ScopedRateThrottle',
     ],
     'DEFAULT_THROTTLE_RATES': {
-        'products': '50/min',
+        'products': '5/min',
+        'categories': '5/min',
         
     },
     
