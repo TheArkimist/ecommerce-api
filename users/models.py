@@ -2,7 +2,8 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 
 # Create your models here.
-class UserExtends(AbstractUser):
+# This class extends the basic fields provided by Django for a user model
+class UserExtends(AbstractUser): 
     othername = models.CharField(max_length=100, blank=True, null=True)
     phone_number = models.CharField(max_length=15, blank=True, null=True)
     address = models.TextField(blank=True, null=True)

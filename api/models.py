@@ -2,6 +2,8 @@ from django.db import models
 from django.conf import settings
 
 # Create your models here.
+
+#This class creates a table and fields for Categories of Products in a database
 class CategoryModel(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
@@ -10,6 +12,8 @@ class CategoryModel(models.Model):
     def __str__(self):
         return self.name
 
+
+#This class creates a table and fields for  Products in a database
 class ProductModel(models.Model):
     name = models.CharField(max_length=100)
     category = models.ForeignKey(CategoryModel, related_name='category', on_delete=models.CASCADE)
