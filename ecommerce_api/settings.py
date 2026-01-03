@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-hnjg7!)u@8v6y9+(0sv)r6zl%m)!v88osg#mpu-kuxnkcjtj=2
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', 'TheArkimist.pythonanywhere.com' ]
+ALLOWED_HOSTS = ['localhost', 'arkimist.pythonanywhere.com' ]
 
 
 # Application definition
